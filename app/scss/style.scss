@@ -4,3 +4,33 @@ body {
     background-color: $background-color-base;
     font-size: $font-size-base;
 }
+
+.link {
+    &1 {
+        @include resetLink(green);
+    }
+
+    &2 {
+        @include resetLink;
+    }
+
+    &3 {
+        @include resetLink(firebrick)
+    }
+}
+
+.portfolio {
+    h1 {
+        font-size: 3rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    p {
+        font-size: 1rem;
+        color: green;
+    }
+}
+
